@@ -10,8 +10,9 @@ const FetchRq = () => {
     const { data, isLoading, isError, error } = useQuery({
         queryKey: ["post", pagenumber],
         queryFn: () => fetchdata(pagenumber),
-        // refetchInterval: 1000,
-        // refetchIntervalInBackground: true,
+        // staleTime:10000
+        refetchInterval: 1000,
+        refetchIntervalInBackground: true,
     });
 
 

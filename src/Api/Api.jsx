@@ -32,13 +32,13 @@ export const fetchindPost = async (id) => {
 
 //Mutation post delete
 
-export const deletepost=(id)=>{
+export const deletepost = (id) => {
     api.delete(`posts/${id}`)
 }
 
 
 // mutation post Upadetd
-export const updatepost=(id)=>{
-  return  api.patch(`posts/${id}`,{title:"i have a updated"});
+export const updatepost = (id) => {
+    return api.patch(`posts/${id}`, { title: "i have a updated" });
 }
 
